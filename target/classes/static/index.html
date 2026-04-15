@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Quran and Azkar App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Islamic Quran and Azkar App</h1>
+        <nav>
+            <button id="quranBtn">Quran</button>
+            <button id="azkarBtn">Azkar</button>
+            <button id="readingModeBtn">Reading Mode</button>
+            <button id="themeToggle">Toggle Theme</button>
+        </nav>
+    </header>
+    <main>
+        <div id="quranSection" class="section">
+            <h2>Quran</h2>
+            <input type="text" id="searchInput" placeholder="Search Surah...">
+            <div id="surahList"></div>
+            <div id="surahDetail"></div>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+        <div id="azkarSection" class="section hidden">
+            <h2>Azkar</h2>
+            <div id="azkarList"></div>
+            <div id="tasbeehCounter">
+                <h3>Tasbeeh Counter</h3>
+                <div id="counter">0</div>
+                <button id="incrementBtn">Increment</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        <div id="readingModeSection" class="section hidden">
+            <h2>Reading Mode</h2>
+            <div id="fontSizeControls">
+                <button id="increaseFont">A+</button>
+                <button id="decreaseFont">A-</button>
+            </div>
+            <div id="readingContent"></div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    font-family: 'Amiri', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #2980b9;
+}
+
+.section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#surahList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.surah-item {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.surah-item:hover {
+    background-color: #bdc3c7;
+}
+
+body.dark .surah-item {
+    background-color: #555;
+}
+
+body.dark .surah-item:hover {
+    background-color: #777;
+}
+
+.ayah {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: right;
+    direction: rtl;
+}
+
+body.dark .ayah {
+    background-color: #444;
+}
+
+#azkarList .azkar-category {
+    margin-bottom: 2rem;
+}
+
+.azkar-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: right;
+    direction: rtl;
+}
+
+body.dark .azkar-item {
+    background-color: #444;
+}
+
+#tasbeehCounter {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#counter {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+#fontSizeControls {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#readingContent {
+    font-size: 1.5rem;
+    line-height: 2;
+    text-align: right;
+    direction: rtl;
+}
