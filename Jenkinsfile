@@ -27,12 +27,11 @@ pipeline {
         stage('Deploy') {
             steps {
                script{
-        
-                   sh 'docker run -d --name islamic-app-container -p 10000:8080 $Username/islamic-app:latest'
-                   sh 'docker-compose up -d'
-
+                   sh 'docker stop islamic-app-container || true'
+                   sh 'docker rm islamic-app-container || true'
+                   sh 'docker run -d --name islamic-app-container -p 10000:8080 islamic-app:latest'
+                   sh 'docker-compose up -d || true'
                 }
-               
             }
         }
     }
