@@ -340,7 +340,7 @@ pipeline {
                         <p><strong>Branch:</strong> ${env.BRANCH_NAME}</p>
                         <p>Please check the <a href="${env.BUILD_URL}">Jenkins build log</a> for details.</p>
                         """,
-                        to: "${env.CHANGE_AUTHOR_EMAIL ?: 'admin@example.com'}'
+                        to: "${env.CHANGE_AUTHOR_EMAIL ?: 'admin@example.com'}"
                     )
                 } catch (Exception e) {
                     echo 'Email notification failed - continuing...'
