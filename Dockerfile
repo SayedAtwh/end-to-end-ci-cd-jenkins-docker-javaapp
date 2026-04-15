@@ -17,7 +17,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Use OpenJDK 17 runtime image
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk
 
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
